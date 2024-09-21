@@ -1,0 +1,5 @@
+function Kip = adaptiveLaw_Ki(S,IsgnS)
+    Lambda = 100;
+    Kip = Lambda*S*(IsgnS');
+end
+

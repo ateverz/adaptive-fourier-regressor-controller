@@ -1,0 +1,14 @@
+function [qtd,wd] = subactuationSolver(u,up)
+    if norm(u) ~= 0
+        u_unit = u/norm(u);
+    else
+        u_unit = zeros(3,1);
+    end
+    
+    sU3 = sqrt(-2*u_unit(3)+2);
+
+    qd = [0.5*sU3 ]
+
+
+end
+

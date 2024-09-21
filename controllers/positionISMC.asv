@@ -1,0 +1,25 @@
+function [u, up, sigmaPp] = positionISMC(m,xi,xip,xid,xidp,xidpp)
+    Kdp = diag([2 2 2]);
+    gammaP = 0.2;
+    alphaP = 8;
+    
+    g = 9.81;
+    ez = [0 0 1]';
+
+    xie = xi-xid;
+    xiep = xip-xidp;
+    
+    nuP = xiep + alphaP*xie;
+
+    nurP = nuP + gammaP*sigmaP;
+
+    sigmaPp = sign(nuP);
+
+    xirpp = xidpp - alphaP*xiep - gammaP*sigmaPp;
+
+
+    YrP = m*xirpp;
+
+    u = - Kdp*nurP - m*g*ez + YrP;
+end
+
