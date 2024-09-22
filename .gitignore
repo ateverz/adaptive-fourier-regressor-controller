@@ -1,2 +1,4 @@
 slprj/
+results/
+*.slx.autosave
 *.slxc
