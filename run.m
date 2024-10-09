@@ -31,4 +31,4 @@ mF = 7;
 c0 = zeros(3,mF);   
 ki0 = 0.01*eye(3);
 %% Run Simulator
-sim('x4Simulator.slx');
+exp = sim('x4Simulator.slx');
