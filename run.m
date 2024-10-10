@@ -1,6 +1,6 @@
 %% Preparing workspace
 close all; clear All; clc
-addpath('controllers/','operators/','UAV/','path_planning/')
+addpath('controllers/','operators/','UAV/','path_planning/', 'plotting/')
 selected_control = 1; % 1 for ours, 2 for Santibañez
 %% Quadrotor Parameters
 % Constant mass [kg]
